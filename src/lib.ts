@@ -6,8 +6,8 @@ export const If = (num: number,  val: string) => {
     let resultCalc = 0;
     let systemValue = 0;
     for (let i = minimumNumberSystem; resultCalc !== resultValue ; i++) {
-        resultCalc = calcResult(i, resultValue);
-        systemValue = i-1;
+        resultCalc = calcResult(i, num);
+        systemValue = i;
     }
 
     return new Test(systemValue)
